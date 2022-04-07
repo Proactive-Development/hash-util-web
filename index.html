@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <div id="load" class="load " style="opacity: 0%;">
+            <img class="load" src="https://raw.githubusercontent.com/Proactive-Development/Logos/main/hash-util/hash-util.png" width="50%">
+        </div>
+        <div class="app" id="app" style="display: none;opacity: 0%;">
+            <div class="center-div">
+                <h1>Hash Generator</h1>
+                <p>Enter data to convert to a hash</p>
+                <div class="app_mode_container">
+                    <button id="app_mode_button_text"class="app_mode_button " style="border-radius: 10px 0px 0px 10px;border-right: 0px;" onclick="chose_app_mode_text()">Text To hash <i class="bi bi-braces"></i></button>
+                    <button id="app_mode_button_file"class="app_mode_button" style="border-radius: 0px 10px 10px 0px;" onclick="chose_app_mode_file()">File To hash <i class="bi bi-file-earmark"></i></button>
+                </div>
+                <div id="app-content" >
+                    <h2>Chose an option</h2>
+                    <p>Convert text to multiple hashes or open any file.</p>
+                    <h3>What is a hash</h3>
+                    <p>Hashing is the transformation of a string of characters into a usually shorter fixed-length value or key that represents the original string.</p>
+                    <h3>How to use</h3>
+                    <p>Enter text to convert to a hash or open a file to convert to a hash.</p>
+                    <a href="https://en.wikipedia.org/wiki/Hash_function">Learn more at Wikipedia</a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Proactive-Development"><img src="https://raw.githubusercontent.com/Proactive-Development/Logos/main/Proactive/Banner.png" class="banner" width="300px"></a>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha256.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha224.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./js/hash.js" async defer></script>
+        <script src="./js/ui.js" async defer></script>
+    </body>
+</html>
