@@ -1,0 +1,16 @@
+{
+    "name": "hash-util-web",
+    "description": "A hash utility now on the web",
+    "version": "0.1.0",
+    "main_file": "index.html",
+    "author": "Proactive Development",
+    "license": "none",
+    "url": "none",
+    "email": "none",
+    "languages": [
+        "html",
+        "css",
+        "javascript"
+    ],
+    "actions": {}
+}
